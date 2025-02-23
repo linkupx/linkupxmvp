@@ -1,4 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GolfMVP
+
+골프 프로와 레슨을 연결하는 PWA 플랫폼입니다.
+
+## 기술 스택
+
+- Next.js
+- TypeScript
+- Tailwind CSS
+- Supabase
+- PWA
+
+## 시작하기
+
+1. 저장소 클론
+```bash
+git clone https://github.com/your-username/golfmvp-app.git
+cd golfmvp-app
+```
+
+2. 의존성 설치
+```bash
+npm install
+```
+
+3. 환경 변수 설정
+`.env.local` 파일을 생성하고 다음 변수들을 설정하세요:
+```
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+
+4. 개발 서버 실행
+```bash
+npm run dev
+```
+
+## 배포
+
+이 프로젝트는 Vercel에 배포됩니다. main 브랜치에 push하면 자동으로 배포가 진행됩니다.
+
+## 주요 기능
+
+- 골프 프로 검색 및 필터링
+- 레슨 예약 시스템
+- 리뷰 및 평점 시스템
+- 포인트 적립 및 사용
+- 프로필 관리
+
+## 라이선스
+
+MIT
 
 ## Getting Started
 
