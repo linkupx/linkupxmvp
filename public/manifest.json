@@ -1,11 +1,11 @@
 {
-  "name": "GolfMVP",
-  "short_name": "GolfMVP",
-  "description": "골프 프로와 레슨을 연결하는 플랫폼",
+  "name": "Golf MVP App",
+  "short_name": "Golf MVP",
+  "description": "골프 MVP 앱",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#15803d",
+  "theme_color": "#000000",
   "icons": [
     {
       "src": "/icons/icon-192x192.png",
