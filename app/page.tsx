@@ -26,6 +26,16 @@ import {
 } from "@/components/ui/select";
 import { Switch } from "@/components/ui/switch";
 import { Label } from "@/components/ui/label";
+import Image from "next/image";
+
+interface Pro {
+  id: number;
+  name: string;
+  image: string;
+  rating: number;
+  experience: string;
+  price: string;
+}
 
 const App: React.FC = () => {
   const [selectedTab, setSelectedTab] = useState("탐색");
@@ -36,7 +46,7 @@ const App: React.FC = () => {
   const [showIntroRequest, setShowIntroRequest] = useState(false);
   const [showIntroHistory, setShowIntroHistory] = useState(false);
   const [showIntroRequests, setShowIntroRequests] = useState(false);
-  const [selectedPro, setSelectedPro] = useState<any>(null);
+  const [selectedPro, setSelectedPro] = useState<Pro | null>(null);
   const [introRequest, setIntroRequest] = useState({
     lessonArea: "",
     desiredArea: "",
@@ -226,9 +236,11 @@ const App: React.FC = () => {
                       <Card key={pro.id} className="flex-shrink-0 w-[280px] p-4">
                         <div className="flex gap-4">
                           <Avatar className="h-16 w-16">
-                            <img
+                            <Image
                               src={pro.image}
                               alt={pro.name}
+                              width={64}
+                              height={64}
                               className="object-cover"
                             />
                           </Avatar>
@@ -385,9 +397,11 @@ const App: React.FC = () => {
               <div className="space-y-6">
                 <section className="text-center mb-6">
                   <Avatar className="h-24 w-24 mx-auto mb-4">
-                    <img
+                    <Image
                       src="https://public.readdy.ai/ai/img_res/de7d08256e797adaaa7938f93a73b643.jpg"
                       alt="Profile"
+                      width={96}
+                      height={96}
                       className="object-cover"
                     />
                   </Avatar>
@@ -527,9 +541,11 @@ const App: React.FC = () => {
                             <Card key={idx} className="p-4">
                               <div className="flex gap-4">
                                 <Avatar className="h-16 w-16">
-                                  <img
+                                  <Image
                                     src={pro.image}
                                     alt={pro.name}
+                                    width={64}
+                                    height={64}
                                     className="object-cover"
                                   />
                                 </Avatar>
@@ -596,9 +612,11 @@ const App: React.FC = () => {
                             <Card key={idx} className="p-4">
                               <div className="flex gap-4">
                                 <Avatar className="h-16 w-16">
-                                  <img
+                                  <Image
                                     src={pro.image}
                                     alt={pro.name}
+                                    width={64}
+                                    height={64}
                                     className="object-cover"
                                   />
                                 </Avatar>
