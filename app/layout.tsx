@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "GolfMVP",
-  description: "골프 프로와 레슨을 연결하는 플랫폼",
+  title: "LinkUp Stories",
+  description: "능력 있는 전문가를 쉽게 찾고, 소개 보상을 통해 네트워크 가치를 실현하세요.",
   manifest: "/manifest.json",
   themeColor: "#000000",
   viewport: "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no",
