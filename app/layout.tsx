@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "GolfMVP",
+    title: "LinkUp Stories",
   },
   icons: {
     apple: [
